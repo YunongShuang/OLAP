@@ -18,5 +18,7 @@ group-by:
 computes the requested aggregates independently for each distinct value in <categorical-field-name>   
 
 command line: python OLAP.py --input input.csv --group-by fieldname --Aggregate Functions 
-Example: python OLAP.py --input input.csv --group-by sector --min open --max open 
+Example: 
+python OLAP.py --input input.csv --group-by sector --min open --max open
+python OLAP.py --input input.csv --group-by sector --top 2 ticker --max open
 
